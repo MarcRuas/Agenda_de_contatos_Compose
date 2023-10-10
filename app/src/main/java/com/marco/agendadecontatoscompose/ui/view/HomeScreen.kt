@@ -36,7 +36,7 @@ fun HomeScreen(
         },
 
         floatingActionButton = {
-            FloatButton() {
+            FloatButton{
                 navController.navigate("salvarContato") {
                     popUpTo("listaContato")
                 }

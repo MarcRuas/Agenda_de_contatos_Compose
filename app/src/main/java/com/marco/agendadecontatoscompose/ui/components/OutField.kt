@@ -1,6 +1,5 @@
 package com.marco.agendadecontatoscompose.ui.components
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
@@ -12,8 +11,6 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.marco.agendadecontatoscompose.ui.theme.Dark200
-import com.marco.agendadecontatoscompose.ui.theme.DarkWhite
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -23,9 +20,6 @@ fun OutField(
     label: String,
     keyboardOptions: KeyboardOptions
 ) {
-
-    val isDark = isSystemInDarkTheme()
-
     OutlinedTextField(
         value = value,
         onValueChange = onValueChange,
